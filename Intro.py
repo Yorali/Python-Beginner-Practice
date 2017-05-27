@@ -43,3 +43,40 @@ print(message.find('Koga')) #Koga starts at [0], so prints 0
 print(message.find('World')) #World starts at [7]
 print(message.find('Deviled Eggs')) #Doesn't exist, so [-1]
 
+
+# 9.) Replace first argument with second
+message.replace('World','Bass')
+	# However, does not change original variable. Just creates a string
+print(message)
+	# Create a new variable...
+new_message = message.replace('World','Bass')
+print(new_message)
+	# OR set original variable to new self
+message = message.replace('World','Bass')
+print(message)
+
+# 10.) Concatenate strings
+greeting = 'Good Evening'
+name = 'Emi'
+
+say_hi = greeting + ', ' + name + '. Welcome!'
+print(say_hi)
+	# Can use placeholders {} as well
+say_hello = '{}, {}. Welcome!'.format(greeting, name)
+	# format arguments correspond to the placeholders
+print(say_hello)
+	# f-strings can be used to place variables right in placeholder, and even run functions on the variables inside
+	# Python 3.6 and above
+#say_hey = f'{greeting}, {name}. Welcome!'
+#print(say_hey)
+
+# 11.) Show all attributes and methods associated with a variable
+print(dir(name))
+	# Give more information about
+print(help(str))
+	# Give info about a method
+print(help(str.lower))
+
+
+
+
