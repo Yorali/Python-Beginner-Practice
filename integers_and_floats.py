@@ -58,6 +58,7 @@ num_13 = '200'
 
 print(num_12 + num_13) # Returns 100200, because the variables have numbers as strings, not integers
 
+	# Cast by using int()
 num_12 = int(num_12)
 num_13 = int(num_13)
 
